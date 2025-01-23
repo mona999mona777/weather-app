@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <!-- google fonts( Roboto ) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css files: fontawsome , bootstrap , my css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="navbar navbar-expand-lg bg-body-tertiary my-nav py-4">
+      <div class="container nav-container navbar-cont m-auto">
+        <a class="navbar-brand" href="#">
+          <div class="d-flex align-items-center justify-content-center w-75">
+            <div class="img-logo w-50">
+              <img src="images/blue cloud.png" alt="blue cloud" class="w-100" />
+            </div>
+            <div class="logo-desc w-50 p-1">
+              <h1 class="m-0">Weather</h1>
+              <span class="nav-prag">tagline goes here</span>
+            </div>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler text-center"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon navbar-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link nav-linkes mx-2 px-3 active"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-2 px-3">
+              <a class="nav-link nav-linkes text-light" href="empty.html"
+                >News</a
+              >
+            </li>
+            <li class="nav-item mx-2 px-2">
+              <a class="nav-link nav-linkes text-light" href="empty.html"
+                >Livecameras</a
+              >
+            </li>
+            <li class="nav-item mx-2 px-3">
+              <a class="nav-link nav-linkes text-light" href="empty.html"
+                >Photos</a
+              >
+            </li>
+            <li class="nav-item mx-2 px-3">
+              <a class="nav-link text-light" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header pt-5">
+      <div class="inner">
+        <div class="py-5">
+          <div class="container inputWidth the-upper m-auto p-2">
+            <input
+              id="entryData"
+              type="text"
+              name="search"
+              placeholder="Find your location...."
+              autocomplete="off"
+              class="form-control main-input"
+            />
+            <button id="buttonData" type="submit" class="text-light findd py-2">
+              Find
+            </button>
+          </div>
+        </div>
+        <div class="data w-100 pt-5">
+          <div class="container dataWidth">
+            <div class="row g-0" id="content"></div>
+          </div>
+        </div>
+        <div class="the-footer w-100">
+          <div class="container w-75 py-5">
+            <div
+              class="row d-flex align-items-center justify-content-start mb-3"
+            >
+              <div class="col-md-7 the-lower p-2 bg-danger mb-3">
+                <form>
+                  <input
+                    type="text"
+                    name="search"
+                    placeholder="Enter your email to subscribe...."
+                    class="form-control main-input footer-input"
+                  />
+                  <button
+                    type="submit"
+                    class="subscrib px-4 py-2 footer-button"
+                  >
+                    subscribe
+                  </button>
+                </form>
+              </div>
+              <div class="col-md-4 social-media offset-1">
+                <ul class="d-flex align-items-center justify-content-start">
+                  <li>
+                    <a class="change-color" href="#">
+                      <div class="icons">
+                        <i class="fs-5 fa-brands fa-facebook-f"></i>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="change-color" href="#">
+                      <div class="icons">
+                        <i class="fs-5 fa-brands fa-instagram"></i>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="change-color" href="#">
+                      <div class="icons">
+                        <i class="fs-5 fa-brands fa-google-plus-g"></i>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="change-color" href="#">
+                      <div class="icons">
+                        <i class="fs-5 fa-brands fa-pinterest-p"></i>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="mt-3 footer-prag">
+              Copyright 2014 Company name. Designed by Themezy. All rights
+              reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
